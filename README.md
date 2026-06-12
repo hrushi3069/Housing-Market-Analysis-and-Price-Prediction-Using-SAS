@@ -71,9 +71,10 @@ Both datasets were merged using a common Reference ID.
 ## How to Run
 
 1. Open SAS Studio (OnDemand for Academics)  
-2. Upload datasets into the `data/` folder  
-3. Run `sas_code/housing_analysis.sas`  
-4. Check outputs in `outputs/` folder  
+2. Upload datasets into the `data/` folder
+3. Configure the environment
+4. Run `sas_code/housing_analysis.sas`  
+5. Check outputs in `outputs/` folder  
 
 ---
 
