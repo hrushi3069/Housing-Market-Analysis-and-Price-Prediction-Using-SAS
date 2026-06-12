@@ -1,66 +1,83 @@
 # Housing Market Analysis and Price Prediction Using SAS
-Housing price analysis using SAS with data cleaning, regression modelling, and visualization.
-## Project Overview
-This project uses SAS to analyze housing prices and build a regression model to predict property values based on key structural and location-related features.
 
-The workflow includes data cleaning, feature engineering, exploratory analysis, correlation study, and regression modelling.
+## Project Summary
+This project applies SAS-based statistical modelling to analyse housing market data and identify the key drivers of property prices.
 
----
+A full data pipeline was implemented, including data cleaning, feature engineering, exploratory analysis, correlation study, and regression modelling.
 
-## Objective
-To identify the main factors influencing house prices and build a statistical model to predict sale price using SAS.
+The final goal is to build a reliable and interpretable model for house price prediction.
 
 ---
 
-## Dataset Description
+## Business Problem
+Property prices are influenced by multiple structural and temporal factors.
+
+The objective of this project is to:
+- Identify the most important factors affecting house prices
+- Quantify their impact using regression analysis
+- Build a statistically sound predictive model in SAS
+
+---
+
+## Dataset
 Two datasets were used:
 
-- HousePrice.xlsx: Contains sale price and transaction details
-- Characteristics.xlsx: Contains property features such as living area, bedrooms, bathrooms, and garage details
+- HousePrice.xlsx → property sale price and transaction details  
+- Characteristics.xlsx → structural property features  
 
-Both datasets were merged using a common reference ID.
+Both datasets were merged using a unique reference identifier to create a unified analytical dataset.
 
 ---
 
 ## Methodology
 
-### 1. Data Preparation
-- Imported Excel files into SAS
-- Merged datasets using `Reference`
-- Cleaned missing and inconsistent values
+### Data Preparation
+- Imported datasets into SAS
+- Merged using Reference ID
+- Removed missing and inconsistent records
 
-### 2. Feature Engineering
+### Feature Engineering
 - Created HouseAge variable
 - Standardized garage information
-- Removed invalid observations
+- Encoded categorical variables for modelling
 
-### 3. Exploratory Analysis
-- Frequency tables
-- Summary statistics
-- Distribution analysis
+### Exploratory Data Analysis
+- Frequency analysis for categorical variables
+- Summary statistics for numerical variables
+- Distribution analysis for price behaviour
 
-### 4. Correlation Analysis
-- Identified relationships between price and predictors
+### Correlation Analysis
+- Measured relationships between variables
+- Identified strong and weak predictors of price
 
-### 5. Regression Modelling
-- PROC GLM for full model with categorical variables
-- PROC REG for multicollinearity checks (VIF, TOL)
-- Log transformation for improved model stability
-
----
-
-## Key Findings
-- Living area has the strongest impact on house price
-- Garage presence increases property value
-- House age negatively affects price
-- Log transformation improves model performance
+### Predictive Modelling
+- PROC GLM for full regression model
+- PROC REG for multicollinearity diagnostics (VIF, TOL)
+- Log transformation applied to improve model stability
 
 ---
 
-## Outputs
-- Graphs: `outputs/graphs`
-- Tables: `outputs/tables`
-- Final Report: `report/final_report.pdf`
+## Key Insights
+- Living area is the strongest predictor of house price
+- Garage availability significantly increases property value
+- Older properties tend to have lower prices
+- Structural attributes are stronger predictors than time-based variables
+- Log transformation improves model accuracy and stability
+
+---
+
+## Outcome
+The final regression model successfully identifies the most influential property features and provides a reliable framework for predicting house prices using statistical methods in SAS.
+
+---
+
+## Skills Demonstrated
+- Data cleaning and preprocessing
+- Feature engineering
+- Exploratory data analysis
+- Regression modelling in SAS
+- Statistical diagnostics (VIF, TOL)
+- Business interpretation of data
 
 ---
 
@@ -74,6 +91,4 @@ Both datasets were merged using a common reference ID.
 
 ---
 
-## Author
-Hrushikesh Pandurang Dunde  
-MSc Data Analytics
+## Project Structure
