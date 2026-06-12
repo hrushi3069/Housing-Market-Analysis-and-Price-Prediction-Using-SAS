@@ -54,3 +54,41 @@ Both datasets were merged using a common Reference ID.
 ---
 
 ## Project Structure
+
+---
+
+## Tools Used
+
+- SAS OnDemand for Academics  
+- PROC IMPORT  
+- PROC SGPLOT  
+- PROC CORR  
+- PROC GLM  
+- PROC REG  
+
+---
+
+## How to Run
+
+1. Open SAS Studio (OnDemand for Academics)  
+2. Upload datasets into the `data/` folder  
+3. Run `sas_code/housing_analysis.sas`  
+4. Check outputs in `outputs/` folder  
+
+---
+
+## Skills Demonstrated
+
+- Data cleaning and preprocessing  
+- Feature engineering  
+- Exploratory data analysis  
+- Regression modelling  
+- Statistical diagnostics (VIF, TOL)  
+- Business interpretation of results  
+
+---
+
+## Author
+
+Hrushikesh Pandurang Dunde  
+MSc Data Analytics  
